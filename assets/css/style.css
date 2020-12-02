@@ -1,0 +1,8 @@
+.modal-form{
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 35px #0000002c
+}
+.vh-100{
+    height: calc(100vh - 86px)!important;
+}

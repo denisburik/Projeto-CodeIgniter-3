@@ -24,12 +24,14 @@ class Users extends MY_Controller {
 
 	public function register_post(){
 		$data = array(
-			'name' => 'name',
-			'email'	=> 'email',
+			'name' => $_POST['name'],
+			'email'	=> $_POST['email'],
 			'password' => 'password',
-		); 
+			'view' => 'dashbord/home'
+		);
 
-		echo form_helper($data)
+		$this->load->view('layouts/default', $data);
+		
 	}
 
 }
