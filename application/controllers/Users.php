@@ -16,5 +16,20 @@ class Users extends MY_Controller {
 		$this->load->view('layouts/default', $data);
 
 	}
+	public function register(){
+		$data['view'] = 'users/register';
+
+		$this->load->view('layouts/default', $data);	
+	}
+
+	public function register_post(){
+		$data = array(
+			'name' => 'name',
+			'email'	=> 'email',
+			'password' => 'password',
+		); 
+
+		echo form_helper($data)
+	}
 
 }
